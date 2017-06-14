@@ -560,8 +560,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Brent 2006": {
-    "Unique": "Brent 2006",
+  "UK Brent": {
+    "Unique": "UK Brent",
     "Portion Portion Portion Gasoline": "57629.73144",
     "Portion Portion Portion Jet Fuel": "10512.0406",
     "Portion Portion Portion Diesel": "31834.90533",
@@ -611,8 +611,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Kingfish 1998": {
-    "Unique": "Kingfish 1998",
+  "Australia Kingfish": {
+    "Unique": "Australia Kingfish",
     "Portion Portion Portion Gasoline": "54999.98862",
     "Portion Portion Portion Jet Fuel": "18473.36114",
     "Portion Portion Portion Diesel": "21718.19254",
@@ -662,8 +662,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Terra Nova 2006": {
-    "Unique": "Terra Nova 2006",
+  "Cananda Terra Nova": {
+    "Unique": "Cananda Terra Nova",
     "Portion Portion Portion Gasoline": "61283.42308",
     "Portion Portion Portion Jet Fuel": "19567.63019",
     "Portion Portion Portion Diesel": "11620.35503",
@@ -713,8 +713,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Statfjord 2006": {
-    "Unique": "Statfjord 2006",
+  "Norway Statfjord": {
+    "Unique": "Norway Statfjord",
     "Portion Portion Portion Gasoline": "50511.57518",
     "Portion Portion Portion Jet Fuel": "20132.35484",
     "Portion Portion Portion Diesel": "26115.5919",
@@ -764,8 +764,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Gullfaks 2015": {
-    "Unique": "Gullfaks 2015",
+  "Norway Gullfaks": {
+    "Unique": "Norway Gullfaks",
     "Portion Portion Portion Gasoline": "50317.96912",
     "Portion Portion Portion Jet Fuel": "20826.02691",
     "Portion Portion Portion Diesel": "26830.43191",
@@ -815,8 +815,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Asgard 2016": {
-    "Unique": "Asgard 2016",
+  "Norway Asgard": {
+    "Unique": "Norway Asgard",
     "Portion Portion Portion Gasoline": "46916.66692",
     "Portion Portion Portion Jet Fuel": "17437.60224",
     "Portion Portion Portion Diesel": "26311.04409",
@@ -866,8 +866,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Draugen 2006": {
-    "Unique": "Draugen 2006",
+  "Norway Draugen": {
+    "Unique": "Norway Draugen",
     "Portion Portion Portion Gasoline": "48896.11226",
     "Portion Portion Portion Jet Fuel": "23975.33269",
     "Portion Portion Portion Diesel": "22269.14477",
@@ -917,8 +917,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Grane 2006": {
-    "Unique": "Grane 2006",
+  "Norway Grane": {
+    "Unique": "Norway Grane",
     "Portion Portion Portion Gasoline": "48103.66538",
     "Portion Portion Portion Jet Fuel": "22099.71876",
     "Portion Portion Portion Diesel": "24013.62261",
@@ -968,8 +968,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Gudrun 2016": {
-    "Unique": "Gudrun 2016",
+  "Norway Gudrun": {
+    "Unique": "Norway Gudrun",
     "Portion Portion Portion Gasoline": "48216.31688",
     "Portion Portion Portion Jet Fuel": "17440.20816",
     "Portion Portion Portion Diesel": "25127.63838",
@@ -1019,8 +1019,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Heidrun 2006": {
-    "Unique": "Heidrun 2006",
+  "Norway Heidrun": {
+    "Unique": "Norway Heidrun",
     "Portion Portion Portion Gasoline": "46527.85804",
     "Portion Portion Portion Jet Fuel": "20014.14984",
     "Portion Portion Portion Diesel": "25158.46724",
@@ -1070,8 +1070,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Njord 2006": {
-    "Unique": "Njord 2006",
+  "Norway Njord": {
+    "Unique": "Norway Njord",
     "Portion Portion Portion Gasoline": "48408.14947",
     "Portion Portion Portion Jet Fuel": "21003.19229",
     "Portion Portion Portion Diesel": "24205.32233",
@@ -1121,8 +1121,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Norne 2006": {
-    "Unique": "Norne 2006",
+  "Norway Norne": {
+    "Unique": "Norway Norne",
     "Portion Portion Portion Gasoline": "49448.27007",
     "Portion Portion Portion Jet Fuel": "22282.67129",
     "Portion Portion Portion Diesel": "19533.63547",
@@ -1172,8 +1172,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Troll 2006": {
-    "Unique": "Troll 2006",
+  "Norway Troll": {
+    "Unique": "Norway Troll",
     "Portion Portion Portion Gasoline": "51402.54516",
     "Portion Portion Portion Jet Fuel": "17132.72018",
     "Portion Portion Portion Diesel": "25351.37618",
@@ -1223,8 +1223,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Valhall 2006": {
-    "Unique": "Valhall 2006",
+  "Norway Valhall": {
+    "Unique": "Norway Valhall",
     "Portion Portion Portion Gasoline": "50392.64325",
     "Portion Portion Portion Jet Fuel": "24659.73662",
     "Portion Portion Portion Diesel": "23671.19713",
