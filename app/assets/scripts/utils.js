@@ -54,7 +54,7 @@ var utils = {
       for (var g = 0; g < 2; g++) {
         for (var j = 0; j < data.metadata.water.split(',').length; j++) {
           for (var k = 0; k < data.metadata.flare.split(',').length; k++) {
-              for (var n = 0; n < data.metadata.year.split(',').length; n++) {
+            for (var n = 0; n < data.metadata.year.split(',').length; n++) {
               // if we don't have the necessary data, load it
               var opgeeRun = 'run' + g + j + k + n;
               if (!Oci.Collections.opgee.get(opgeeRun)) {
@@ -622,7 +622,7 @@ var utils = {
     var wi = this.indexInArray(this.trimMetadataArray(metadata.water.split(',')), water);
     var fi = this.indexInArray(this.trimMetadataArray(metadata.flare.split(',')), flaring);
     var yi = this.indexInArray(this.trimMetadataArray(metadata.year.split(',')), year);
-    
+
     // Generate model string
     var model = 'run';
     // If we don't have a match, return default
