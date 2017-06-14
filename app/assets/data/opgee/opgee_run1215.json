@@ -230,8 +230,8 @@
     "Steam-to-Oil-Ratio": "0.32377839",
     "Flaring-to-Oil-Ratio": "1.624708535"
   },
-  "Brent 2006": {
-    "Unique": "Brent 2006",
+  "UK Brent": {
+    "Unique": "UK Brent",
     "Exploration": "0",
     "Drilling": "0.757424053",
     "Production": "1.063820341",
@@ -251,8 +251,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "196.3470581"
   },
-  "Kingfish 1998": {
-    "Unique": "Kingfish 1998",
+  "Australia Kingfish": {
+    "Unique": "Australia Kingfish",
     "Exploration": "0",
     "Drilling": "0.630406006",
     "Production": "0.807754379",
@@ -272,8 +272,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "7.359425509"
   },
-  "Terra Nova 2006": {
-    "Unique": "Terra Nova 2006",
+  "Cananda Terra Nova": {
+    "Unique": "Cananda Terra Nova",
     "Exploration": "0",
     "Drilling": "1.39825897",
     "Production": "2.836377591",
@@ -293,8 +293,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "21.90285946"
   },
-  "Statfjord 2006": {
-    "Unique": "Statfjord 2006",
+  "Norway Statfjord": {
+    "Unique": "Norway Statfjord",
     "Exploration": "0",
     "Drilling": "7.738831975",
     "Production": "21.23195171",
@@ -314,8 +314,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "8.242174741"
   },
-  "Gullfaks 2015": {
-    "Unique": "Gullfaks 2015",
+  "Norway Gullfaks": {
+    "Unique": "Norway Gullfaks",
     "Exploration": "0",
     "Drilling": "0.489966693",
     "Production": "65.99088161",
@@ -335,8 +335,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "9.89274738"
   },
-  "Asgard 2016": {
-    "Unique": "Asgard 2016",
+  "Norway Asgard": {
+    "Unique": "Norway Asgard",
     "Exploration": "0",
     "Drilling": "9.28983431",
     "Production": "100.818261",
@@ -356,8 +356,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "20.50185191"
   },
-  "Draugen 2006": {
-    "Unique": "Draugen 2006",
+  "Norway Draugen": {
+    "Unique": "Norway Draugen",
     "Exploration": "0",
     "Drilling": "7.34579379",
     "Production": "3.396522702",
@@ -377,8 +377,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "0.350495704"
   },
-  "Grane 2006": {
-    "Unique": "Grane 2006",
+  "Norway Grane": {
+    "Unique": "Norway Grane",
     "Exploration": "0",
     "Drilling": "7.825759363",
     "Production": "6.611687127",
@@ -398,8 +398,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "0.682462488"
   },
-  "Gudrun 2016": {
-    "Unique": "Gudrun 2016",
+  "Norway Gudrun": {
+    "Unique": "Norway Gudrun",
     "Exploration": "0",
     "Drilling": "10.00817356",
     "Production": "3.189601419",
@@ -419,8 +419,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "1.356328873"
   },
-  "Heidrun 2006": {
-    "Unique": "Heidrun 2006",
+  "Norway Heidrun": {
+    "Unique": "Norway Heidrun",
     "Exploration": "0",
     "Drilling": "7.771144227",
     "Production": "3.67932015",
@@ -440,8 +440,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "1.217336217"
   },
-  "Njord 2006": {
-    "Unique": "Njord 2006",
+  "Norway Njord": {
+    "Unique": "Norway Njord",
     "Exploration": "0",
     "Drilling": "7.683742491",
     "Production": "40.35157743",
@@ -461,8 +461,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "3.140234918"
   },
-  "Norne 2006": {
-    "Unique": "Norne 2006",
+  "Norway Norne": {
+    "Unique": "Norway Norne",
     "Exploration": "0",
     "Drilling": "8.161172676",
     "Production": "4.292535584",
@@ -482,8 +482,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "1.543113775"
   },
-  "Troll 2006": {
-    "Unique": "Troll 2006",
+  "Norway Troll": {
+    "Unique": "Norway Troll",
     "Exploration": "0",
     "Drilling": "0.357280364",
     "Production": "4.863948488",
@@ -503,8 +503,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "1.467209431"
   },
-  "Valhall 2006": {
-    "Unique": "Valhall 2006",
+  "Norway Valhall": {
+    "Unique": "Norway Valhall",
     "Exploration": "0",
     "Drilling": "7.636817223",
     "Production": "1.367514296",
