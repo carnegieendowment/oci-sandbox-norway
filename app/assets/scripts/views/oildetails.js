@@ -21,6 +21,7 @@ var OilDetails = BaseView.extend({
 
   events: {
     'change #toggle-lpg': 'handleParametersChange',
+    'change #toggle-gwp': 'handleParametersChange',
     'change .config-dropdown': 'handleDropdown',
     'click #oil-details-share': 'handleShare',
     'click .carosel-arrow': 'handleCarosel',
@@ -254,16 +255,16 @@ var OilDetails = BaseView.extend({
     // Default model data
     var defaultModelData = {
       info: Oci.data.info,
-      opgee: Oci.Collections.opgee.get(utils.getOPGEEModel('0', '0', '0')).toJSON(),
-      prelim: Oci.Collections.prelim.get(utils.getPRELIMModel('0 = Default', 1)).toJSON()
+      opgee: Oci.Collections.opgee.get(utils.getOPGEEModel('0', '0', '0', '0')).toJSON(),
+      prelim: Oci.Collections.prelim.get(utils.getPRELIMModel('0', '0 = Default', 1)).toJSON()
     };
 
     // Grab things based on the model we're using
     var params = this.modelParametersView.getModelValues();
 
     // if we don't have the necessary data, load it
-    var opgeeRun = utils.getOPGEEModel(params.solarSteam, params.water, params.flaring);
-    var prelimRun = utils.getPRELIMModel(params.refinery, params.lpg);
+    var opgeeRun = utils.getOPGEEModel(params.gwp, params.water, params.flaring, params.year);
+    var prelimRun = utils.getPRELIMModel(params.gwp, params.refinery, params.lpg);
     if (!Oci.Collections.opgee.get(opgeeRun)) {
       var opgeeModel = new OpgeeModel({ id: opgeeRun });
       opgeeModel.fetch({ async: false, success: function (data) {
