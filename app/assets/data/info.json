@@ -417,9 +417,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Brent 2014": {
+  "UK Brent": {
     "Region": "Europe",
-    "Unique": "Brent 2014",
+    "Unique": "UK Brent",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Brent 2014",
     "Assay Name (PRELIM)": "Results for: Wilmington CA_Knovel",
@@ -455,9 +455,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Kingfish 1998": {
+  "Australia Kingfish": {
     "Region": "Asia-Pacific",
-    "Unique": "Kingfish 1998",
+    "Unique": "Australia Kingfish",
     "Country": "Australia",
     "Oil Field Name (OPGEE)": "Kingfish 1998",
     "Assay Name (PRELIM)": "Results for: Brent_Exxon",
@@ -493,9 +493,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Terra Nova 2014": {
+  "Cananda Terra Nova": {
     "Region": "North America",
-    "Unique": "Terra Nova 2014",
+    "Unique": "Cananda Terra Nova",
     "Country": "Canada",
     "Oil Field Name (OPGEE)": "Terra Nova 2014",
     "Assay Name (PRELIM)": "Results for: Cossack_Chevron",
@@ -531,9 +531,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Statfjord 2014": {
+  "Norway Statfjord": {
     "Region": "Europe",
-    "Unique": "Statfjord 2014",
+    "Unique": "Norway Statfjord",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Statfjord 2014",
     "Assay Name (PRELIM)": "Results for: Statoil Terra Nova",
@@ -569,9 +569,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Gullfaks 2015": {
+  "Norway Gullfaks": {
     "Region": "Europe",
-    "Unique": "Gullfaks 2015",
+    "Unique": "Norway Gullfaks",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Gullfaks 2015",
     "Assay Name (PRELIM)": "Results for: Norway North Sea Skarv_BP",
@@ -607,9 +607,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Asgard 2014": {
+  "Norway Asgard": {
     "Region": "Europe",
-    "Unique": "Asgard 2014",
+    "Unique": "Norway Asgard",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Asgard 2014",
     "Assay Name (PRELIM)": "Results for: Marine Qatar_O&G",
@@ -645,9 +645,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Draugen 2014": {
+  "Norway Draugen": {
     "Region": "Europe",
-    "Unique": "Draugen 2014",
+    "Unique": "Norway Draugen",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Draugen 2014",
     "Assay Name (PRELIM)": "Results for: Siberian Light_COA",
@@ -683,9 +683,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Grane 2014": {
+  "Norway Grane": {
     "Region": "Europe",
-    "Unique": "Grane 2014",
+    "Unique": "Norway Grane",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Grane 2014",
     "Assay Name (PRELIM)": "Results for: Arab Light_Stratiev",
@@ -721,9 +721,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Gudrun 2014": {
+  "Norway Gudrun": {
     "Region": "Europe",
-    "Unique": "Gudrun 2014",
+    "Unique": "Norway Gudrun",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Gudrun 2014",
     "Assay Name (PRELIM)": "Results for: Arab Heavy_Stratiev",
@@ -759,9 +759,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Heidrun 2014": {
+  "Norway Heidrun": {
     "Region": "Europe",
-    "Unique": "Heidrun 2014",
+    "Unique": "Norway Heidrun",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Heidrun 2014",
     "Assay Name (PRELIM)": "Results for: Arab Medium_Stratiev",
@@ -797,9 +797,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Njord 2014": {
+  "Norway Njord": {
     "Region": "Europe",
-    "Unique": "Njord 2014",
+    "Unique": "Norway Njord",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Njord 2014",
     "Assay Name (PRELIM)": "Results for: Fateh_COA",
@@ -835,9 +835,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Norne 2014": {
+  "Norway Norne": {
     "Region": "Europe",
-    "Unique": "Norne 2014",
+    "Unique": "Norway Norne",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Norne 2014",
     "Assay Name (PRELIM)": "Results for: UAE Murban_BP",
@@ -873,9 +873,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Troll 2014": {
+  "Norway Troll": {
     "Region": "Europe",
-    "Unique": "Troll 2014",
+    "Unique": "Norway Troll",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Troll 2014",
     "Assay Name (PRELIM)": "Results for: Alaskan North Slope_Exxon",
@@ -911,9 +911,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Valhall 2014": {
+  "Norway Valhall": {
     "Region": "Europe",
-    "Unique": "Valhall 2014",
+    "Unique": "Norway Valhall",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Valhall 2014",
     "Assay Name (PRELIM)": "Results for: Bakken_Various Sources",
