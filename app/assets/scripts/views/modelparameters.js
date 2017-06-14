@@ -242,7 +242,7 @@ var ModelParameters = Backbone.View.extend({
     tempArray[tempArray.length - 1] = 'max';
     return tempArray;
   },
-    
+
   sliderHelperYear: function (array) {
     var min = d3.min(array);
     var max = d3.max(array);
