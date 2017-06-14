@@ -16,8 +16,8 @@ var metadata = Oci.data.metadata
 var yi = utils.trimMetadataArray(metadata.year.split(','));
 var wi = utils.trimMetadataArray(metadata.water.split(','));
 var fi = utils.trimMetadataArray(metadata.flare.split(','));
-var gi = [1,0];
-var zi = [1,0];
+var gi = [1, 0];
+var zi = [1, 0];
 var ri = utils.trimMetadataArray(metadata.refinery.split(','));
 var li = [1, 0];
 
