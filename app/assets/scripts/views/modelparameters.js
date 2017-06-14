@@ -10,8 +10,8 @@ var noUiSlider = require('nouislider');
 var template = require('../templates/modelparameters.ejs');
 
 var self;
-var solarSteamValues;
-var solarSteamLabels;
+var yearValues;
+var yearLabels;
 var flaringValues;
 var flaringLabels;
 var waterValues;
@@ -46,12 +46,13 @@ var ModelParameters = Backbone.View.extend({
 
   getModelValues: function () {
     return {
-      solarSteam: (this.solarSteamSlider.get() / 100),
+      year: (this.yearSlider.get() / 100),
       water: (this.waterSlider.get() / 100),
       flaring: (this.flaringSlider.get() / 100),
       showCoke: (this.cokeSlider.get() / 100),
       refinery: $('#dropdown-refinery').val(),
-      lpg: $('#toggle-lpg').is(':checked')
+      lpg: $('#toggle-lpg').is(':checked'),
+      gwp: $('#toggle-gwp').is(':checked')
     };
   },
 
@@ -59,16 +60,18 @@ var ModelParameters = Backbone.View.extend({
   setModelParameters: function (params) {
     if (params.opgee) {
       try {
-        // We know the format of the param 'run###'
-        var solarSteam = params.opgee[3];
+        // We know the format of the param 'run####'
+        var gwp = params.opgee[3];
         var water = params.opgee[4];
         var flaring = params.opgee[5];
-        var solarSteamValue = parseFloat(Oci.data.metadata.solarSteam.split(',')[solarSteam]) * 100;
-        this.solarSteamSlider.set(solarSteamValue);
+        var year = params.opgee[6];
+        var yearValue = parseFloat(Oci.data.metadata.year.split(',')[year]);
+        this.yearSlider.set(yearValue);
         var waterValue = parseFloat(Oci.data.metadata.water.split(',')[water]) * 100;
         this.waterSlider.set(waterValue);
         var flaringValue = parseFloat(Oci.data.metadata.flare.split(',')[flaring]) * 100;
         this.flaringSlider.set(flaringValue);
+        $('#toggle-gwp').attr('checked', Boolean(gwp));
       } catch (e) {
         console.warn('bad input parameter', e);
       }
@@ -76,11 +79,12 @@ var ModelParameters = Backbone.View.extend({
 
     if (params.prelim) {
       try {
-        // We know the format of the param 'run##'
+        // We know the format of the param 'run###'
         var refinery = params.prelim[3];
         var lpg = params.prelim[4];
         $('#dropdown-refinery').prop('selectedIndex', refinery);
         $('#toggle-lpg').attr('checked', Boolean(lpg));
+        $('#toggle-gwp').attr('checked', Boolean(gwp));
       } catch (e) {
         console.warn('bad input parameter', e);
       }
@@ -94,8 +98,8 @@ var ModelParameters = Backbone.View.extend({
   },
 
   updateSummary: function () {
-    var solarSteam = parseInt(this.solarSteamSlider.get());
-    $('.value.solar-steam span').html(solarSteam + '%');
+    var year = parseInt(this.yearSlider.get());
+    $('.value.year span').html(year);
     var flaring = parseInt(this.flaringSlider.get());
     $('.value.flare span').html(flaring + '%');
     var water = parseInt(this.waterSlider.get());
@@ -104,6 +108,8 @@ var ModelParameters = Backbone.View.extend({
     $('.value.petcoke span').html(petcoke + '%');
     var lpg = $('#toggle-lpg').is(':checked') ? 'Sell' : 'Use';
     $('.value.lpg span').html(lpg);
+    var gwp = $('#toggle-gwp').is(':checked') ? '20' : '100';
+    $('.value.gwp span').html(gwp);
     var refinery = $('#dropdown-refinery').val();
     switch (refinery) {
       case '0 = Default':
@@ -128,22 +134,22 @@ var ModelParameters = Backbone.View.extend({
   addSliders: function () {
     var self = this;
 
-    this.solarSteamSlider = noUiSlider.create($('#slider-solar-steam')[0], {
-      start: 0,
+    this.yearSlider = noUiSlider.create($('#slider-year')[0], {
+      start: 2014,
       connect: 'lower',
       snap: true,
-      range: _.zipObject(solarSteamLabels, solarSteamValues),
+      range: _.zipObject(yearLabels, yearValues),
       pips: {
         mode: 'values',
-        values: solarSteamValues,
+        values: yearValues,
         density: 10,
         format: wNumb({
-          postfix: '%'
+          toFixed: '10'
         }),
         stepped: true
       }
     });
-    this.solarSteamSlider.on('update', function (value) {
+    this.yearSlider.on('update', function (value) {
       self.trigger('sliderUpdate', value);
     });
 
@@ -214,12 +220,12 @@ var ModelParameters = Backbone.View.extend({
   setSliders: function () {
     var m = Oci.data.metadata;
 
-    solarSteamValues = this.metadataToArray(m.solarSteam);
+    yearValues = this.metadataToArray(m.year);
     flaringValues = this.metadataToArray(m.flare);
     waterValues = this.metadataToArray(m.water);
     cokeValues = [0, 50, 100];
 
-    solarSteamLabels = this.sliderHelper(solarSteamValues);
+    yearLabels = this.sliderHelperYear(yearValues);
     flaringLabels = this.sliderHelper(flaringValues);
     waterLabels = this.sliderHelper(waterValues);
     cokeLabels = this.sliderHelper(cokeValues);
@@ -231,6 +237,17 @@ var ModelParameters = Backbone.View.extend({
     var max = d3.max(array);
     var tempArray = array.map(function (val) {
       return ((val - min) / ((max - min) / 100)).toFixed(0) + '%';
+    });
+    tempArray[0] = 'min';
+    tempArray[tempArray.length - 1] = 'max';
+    return tempArray;
+  },
+    
+  sliderHelperYear: function (array) {
+    var min = d3.min(array);
+    var max = d3.max(array);
+    var tempArray = array.map(function (val) {
+      return ((val - min) / ((max - min) / 100)).toFixed(5);
     });
     tempArray[0] = 'min';
     tempArray[tempArray.length - 1] = 'max';
