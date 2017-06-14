@@ -24,19 +24,19 @@ test('All possible runs should be readable', function (t) {
   var yi = metadata.year.split(','); 
   var zi = [1, 0];
 
-  gi.forEach(function (_, s) {
+  gi.forEach(function (_, g) {
     wi.forEach(function (_, w) {
       fi.forEach(function (_, f) {
-        yi.forEach(function (_,y) {
-          t.notThrows(function () { JSON.parse(fs.readFileSync('../app/assets/data/opgee/opgee_run' + s + w + f + '.json')); });
+        yi.forEach(function (_, y) {
+          t.notThrows(function () { JSON.parse(fs.readFileSync('../app/assets/data/opgee/opgee_run' + g + w + f + y + '.json')); });
         });
       });
     });
   });
-  zi.forEach(function (_,z) {
+  zi.forEach(function (_, z) {
     ri.forEach(function (_, r) {
       li.forEach(function (_, l) {
-        t.notThrows(function () { JSON.parse(fs.readFileSync('../app/assets/data/prelim/prelim_run' + r + l + '.json')); });
+        t.notThrows(function () { JSON.parse(fs.readFileSync('../app/assets/data/prelim/prelim_run' + z + r + l + '.json')); });
       });
     });
   });
