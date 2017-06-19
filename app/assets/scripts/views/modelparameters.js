@@ -220,7 +220,7 @@ var ModelParameters = Backbone.View.extend({
   setSliders: function () {
     var m = Oci.data.metadata;
 
-    yearValues = this.metadataToArray(m.year);
+    yearValues = this.metadataYearToArray(m.year);
     flaringValues = this.metadataToArray(m.flare);
     waterValues = this.metadataToArray(m.water);
     cokeValues = [0, 50, 100];
@@ -247,11 +247,17 @@ var ModelParameters = Backbone.View.extend({
     var min = d3.min(array);
     var max = d3.max(array);
     var tempArray = array.map(function (val) {
-      return (((val - min) / ((max - min) / 100)) / 100).toFixed(5);
+      return ((val - min) / ((max - min) / 100)).toFixed(5);
     });
     tempArray[0] = 'min';
     tempArray[tempArray.length - 1] = 'max';
     return tempArray;
+  },
+
+    metadataYearToArray: function (metadata) {
+    return metadata.split(',').sort(function (a, b) {
+      return Number(a) - Number(b);
+    }).map(function (val) { return Number(val); });
   },
 
   metadataToArray: function (metadata) {
