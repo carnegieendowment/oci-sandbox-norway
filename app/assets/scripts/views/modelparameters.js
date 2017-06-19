@@ -46,7 +46,7 @@ var ModelParameters = Backbone.View.extend({
 
   getModelValues: function () {
     return {
-      year: (this.yearSlider.get()),
+      year: (this.yearSlider.get() / 100),
       water: (this.waterSlider.get() / 100),
       flaring: (this.flaringSlider.get() / 100),
       showCoke: (this.cokeSlider.get() / 100),
