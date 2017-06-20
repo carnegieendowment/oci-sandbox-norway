@@ -37,7 +37,7 @@ zi.forEach(function (_, z) {
   ri.forEach(function (_, r) {
     li.forEach(function (_, l) {
       hi.forEach(function (_, h) {
-        var temp = JSON.parse(fs.readFileSync('app/assets/data/prelim/prelim_run' + z + r + l + '.json'));
+        var temp = JSON.parse(fs.readFileSync('app/assets/data/prelim/prelim_run' + z + r + l + h + '.json'));
         Oci.data.prelim['run' + z + r + l + h] = temp;
       });
     });
