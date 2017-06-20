@@ -44,18 +44,18 @@
   "Nigeria Agbami": {
     "Unique": "Nigeria Agbami",
     "Exploration": "0",
-    "Drilling": "1.170599646",
-    "Production": "2.492264765",
-    "Processing": "5.904193338",
+    "Drilling": "0",
+    "Production": "0",
+    "Processing": "0",
     "Upgrading": "0",
     "Maintenance": "0",
     "Waste": "0",
-    "Venting, Flaring, and Fugitive Emissions": "21.67812096",
+    "Venting, Flaring, and Fugitive Emissions": "0",
     "Diluent": "0",
-    "Miscellaneous": "2.729132766",
-    "Transport to Refinery": "4.323689622",
-    "Offsite emissions": "-1.224145341",
-    "Net lifecycle emissions": "37.07385576",
+    "Miscellaneous": "0",
+    "Transport to Refinery": "0",
+    "Offsite emissions": "0",
+    "Net lifecycle emissions": "0",
     "API Gravity": "47",
     "Gas-to-Oil-Ratio": "1188.938",
     "Water-to-Oil-Ratio": "0",
@@ -167,29 +167,29 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "52.16374762"
   },
-  "U.S. California Midway Sunset": {
-    "Unique": "U.S. California Midway Sunset",
+  "U.S. California Midway Sunset^": {
+    "Unique": "U.S. California Midway Sunset^",
     "Exploration": "0",
-    "Drilling": "2.192033466",
-    "Production": "6.672091417",
-    "Processing": "0.431784464",
+    "Drilling": "2.190782203",
+    "Production": "7.044119991",
+    "Processing": "2.768144084",
     "Upgrading": "0",
     "Maintenance": "0",
     "Waste": "0",
-    "Venting, Flaring, and Fugitive Emissions": "19.18482031",
+    "Venting, Flaring, and Fugitive Emissions": "16.45772045",
     "Diluent": "0",
     "Miscellaneous": "3.00544719",
-    "Transport to Refinery": "0.333792685",
-    "Offsite emissions": "-19.40405848",
-    "Net lifecycle emissions": "12.41591105",
-    "API Gravity": "22.6",
-    "Gas-to-Oil-Ratio": "168",
-    "Water-to-Oil-Ratio": "10.01858359",
-    "Steam-to-Oil-Ratio": "5.789649148",
-    "Flaring-to-Oil-Ratio": "1"
+    "Transport to Refinery": "4.012653991",
+    "Offsite emissions": "23.26979602",
+    "Net lifecycle emissions": "58.74866394",
+    "API Gravity": "19",
+    "Gas-to-Oil-Ratio": "103.3788657",
+    "Water-to-Oil-Ratio": "8.098893899",
+    "Steam-to-Oil-Ratio": "4.801848585",
+    "Flaring-to-Oil-Ratio": "1.624708535"
   },
-  "U.S. California South Belridge": {
-    "Unique": "U.S. California South Belridge",
+  "U.S. California South Belridge^": {
+    "Unique": "U.S. California South Belridge^",
     "Exploration": "0",
     "Drilling": "7.920850676",
     "Production": "0.784862588",
@@ -209,26 +209,26 @@
     "Steam-to-Oil-Ratio": "3.240801695",
     "Flaring-to-Oil-Ratio": "0.224412015"
   },
-  "U.S. California Wilmington": {
-    "Unique": "U.S. California Wilmington",
+  "U.S. California Wilmington^": {
+    "Unique": "U.S. California Wilmington^",
     "Exploration": "0",
     "Drilling": "0.8905326",
-    "Production": "41.61505779",
-    "Processing": "0.764920562",
+    "Production": "35.84202969",
+    "Processing": "3.408704558",
     "Upgrading": "0",
     "Maintenance": "0",
     "Waste": "0",
-    "Venting, Flaring, and Fugitive Emissions": "16.57049344",
+    "Venting, Flaring, and Fugitive Emissions": "16.78156532",
     "Diluent": "0",
     "Miscellaneous": "3.061948889",
     "Transport to Refinery": "0.071234837",
-    "Offsite emissions": "7.319348873",
-    "Net lifecycle emissions": "70.293537",
+    "Offsite emissions": "6.299682845",
+    "Net lifecycle emissions": "66.35569874",
     "API Gravity": "19.5",
-    "Gas-to-Oil-Ratio": "292.4286446",
-    "Water-to-Oil-Ratio": "46.3860384",
+    "Gas-to-Oil-Ratio": "324.7186657",
+    "Water-to-Oil-Ratio": "42.2499204",
     "Steam-to-Oil-Ratio": "0",
-    "Flaring-to-Oil-Ratio": "1"
+    "Flaring-to-Oil-Ratio": "1.624708535"
   },
   "UK Brent": {
     "Unique": "UK Brent",
@@ -251,8 +251,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "196.3470581"
   },
-  "Australia Kingfish": {
-    "Unique": "Australia Kingfish",
+  "Australia Kingfish*": {
+    "Unique": "Australia Kingfish*",
     "Exploration": "0",
     "Drilling": "0.629542936",
     "Production": "0.638407362",
@@ -272,8 +272,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "7.359425509"
   },
-  "Cananda Terra Nova": {
-    "Unique": "Cananda Terra Nova",
+  "Cananda Terra Nova*": {
+    "Unique": "Cananda Terra Nova*",
     "Exploration": "0",
     "Drilling": "1.395986773",
     "Production": "11.54283712",
@@ -524,8 +524,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "1.797245516"
   },
-  "UK Forties Blend": {
-    "Unique": "UK Forties Blend",
+  "UK Forties Blend^": {
+    "Unique": "UK Forties Blend^",
     "Exploration": "0",
     "Drilling": "0.622870997",
     "Production": "21.56424301",
