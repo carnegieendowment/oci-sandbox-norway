@@ -77,49 +77,47 @@ var utils = {
         for (var l = 0; l < data.metadata.refinery.split(',').length; l++) {
           // this for loop is for LPG runs
           for (var m = 0; m < 2; m++) {
-            for (var h = 0; h < data.metadata.year.split(',').length; h++) {
-            // if we don't have the necessary data, load it
-              var prelimRun = 'run' + z + l + m + h;
+          // if we don't have the necessary data, load it
+            var prelimRun = 'run' + z + l + m;
 
-              if (!Oci.Collections.prelim.get(prelimRun)) {
-                var prelimModel = new PrelimModel({ id: prelimRun });
-                prelimModel.fetch({ async: false, success: function (data) {
-                  Oci.Collections.prelim.add(data);
-                }});
+            if (!Oci.Collections.prelim.get(prelimRun)) {
+              var prelimModel = new PrelimModel({ id: prelimRun });
+              prelimModel.fetch({ async: false, success: function (data) {
+                Oci.Collections.prelim.add(data);
+              }});
+            }
+
+            var prelim = Oci.Collections.prelim.get(prelimRun).toJSON()[key];
+            // we might not have a prelim run for this oil (certain oils don't
+            // run through some refineries)
+            if (!prelim) break;
+
+            [0, 0.5, 1].forEach(function (showCoke) {
+              var refining = +utils.getRefiningTotal(prelim);
+              var combustion = +utils.getCombustionTotal(prelim, showCoke, m);
+
+              // Sum it up! (conditionally based on whether component is selected)
+              var total;
+              components.upstream = opgeeExtent;
+              components.midstream = refining;
+              components.downstream = combustion + transport;
+              if (component) {
+                total = components[component];
+              } else {
+                total = _.reduce(components, function (a, b) { return a + b; }, 0);
               }
 
-              var prelim = Oci.Collections.prelim.get(prelimRun).toJSON()[key];
-              // we might not have a prelim run for this oil (certain oils don't
-              // run through some refineries)
-              if (!prelim) break;
+              // Handle ratio
+              total = utils.getValueForRatio(total, ratio, prelim, showCoke, data.info[key], m);
 
-              [0, 0.5, 1].forEach(function (showCoke) {
-                var refining = +utils.getRefiningTotal(prelim);
-                var combustion = +utils.getCombustionTotal(prelim, showCoke, m);
-
-                // Sum it up! (conditionally based on whether component is selected)
-                var total;
-                components.upstream = opgeeExtent;
-                components.midstream = refining;
-                components.downstream = combustion + transport;
-                if (component) {
-                  total = components[component];
-                } else {
-                  total = _.reduce(components, function (a, b) { return a + b; }, 0);
-                }
-
-                // Handle ratio
-                total = utils.getValueForRatio(total, ratio, prelim, showCoke, data.info[key], m);
-
-                // Check which is bigger (or smaller)
-                if (!opgeeExtent || (extraction * minMaxMultiplier > opgeeExtent * minMaxMultiplier)) {
-                  opgeeExtent = extraction;
-                }
-                if (!extent || (total * minMaxMultiplier > extent * minMaxMultiplier)) {
-                  extent = total;
-                }
-              });
-            }
+              // Check which is bigger (or smaller)
+              if (!opgeeExtent || (extraction * minMaxMultiplier > opgeeExtent * minMaxMultiplier)) {
+                opgeeExtent = extraction;
+              }
+              if (!extent || (total * minMaxMultiplier > extent * minMaxMultiplier)) {
+                extent = total;
+              }
+            });
           }
         }
       }
@@ -642,14 +640,13 @@ var utils = {
     var zi = Number(gwp);
     var ri = this.trimMetadataArray(metadata.refinery.split(',')).indexOf(refinery);
     var li = Number(lpg);
-    var hi = this.indexInArray(this.trimMetadataArray(metadata.year.split(',')), year);
     // Generate model string
     var model = 'run';
     // If we don't have a match, return default
     if (ri === -1) {
-      model += (zi + '0' + li + '0');
+      model += (zi + '0' + li);
     } else {
-      model = model + zi + ri + li + hi;
+      model = model + zi + ri + li;
     }
     return model;
   },
