@@ -225,7 +225,7 @@ var ModelParameters = Backbone.View.extend({
     waterValues = this.metadataToArray(m.water);
     cokeValues = [0, 50, 100];
 
-    yearLabels = this.sliderHelper(yearValues);
+    yearLabels = this.sliderHelperYear(yearValues);
     flaringLabels = this.sliderHelper(flaringValues);
     waterLabels = this.sliderHelper(waterValues);
     cokeLabels = this.sliderHelper(cokeValues);
