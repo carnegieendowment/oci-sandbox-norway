@@ -220,7 +220,7 @@ var ModelParameters = Backbone.View.extend({
   setSliders: function () {
     var m = Oci.data.metadata;
 
-    yearValues = this.metadataYearToArray(m.year);
+    yearValues = this.metadataToArray(m.year);
     flaringValues = this.metadataToArray(m.flare);
     waterValues = this.metadataToArray(m.water);
     cokeValues = [0, 50, 100];
