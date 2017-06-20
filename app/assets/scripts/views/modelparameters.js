@@ -46,7 +46,7 @@ var ModelParameters = Backbone.View.extend({
 
   getModelValues: function () {
     return {
-      year: (this.yearSlider.get() / 100),
+      year: (this.yearSlider.get()),
       water: (this.waterSlider.get() / 100),
       flaring: (this.flaringSlider.get() / 100),
       showCoke: (this.cokeSlider.get() / 100),
@@ -65,7 +65,7 @@ var ModelParameters = Backbone.View.extend({
         var water = params.opgee[4];
         var flaring = params.opgee[5];
         var year = params.opgee[6];
-        var yearValue = parseFloat(Oci.data.metadata.year.split(',')[year]) * 100;
+        var yearValue = parseFloat(Oci.data.metadata.year.split(',')[year]);
         this.yearSlider.set(yearValue);
         var waterValue = parseFloat(Oci.data.metadata.water.split(',')[water]) * 100;
         this.waterSlider.set(waterValue);
@@ -247,7 +247,7 @@ var ModelParameters = Backbone.View.extend({
     var min = d3.min(array);
     var max = d3.max(array);
     var tempArray = array.map(function (val) {
-      return ((val - min) / ((max - min) / 100)).toFixed(5);
+      return ((val - min) / ((max - min) / 100)).toFixed(0);
     });
     tempArray[0] = 'min';
     tempArray[tempArray.length - 1] = 'max';
