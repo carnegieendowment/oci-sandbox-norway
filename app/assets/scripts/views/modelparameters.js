@@ -85,6 +85,7 @@ var ModelParameters = Backbone.View.extend({
         $('#dropdown-refinery').prop('selectedIndex', refinery);
         $('#toggle-lpg').attr('checked', Boolean(lpg));
         $('#toggle-gwp').attr('checked', Boolean(gwp));
+        var yearValue = parseFloat(Oci.data.metadata.year.split(',')[year]) * 100;
         this.yearSlider.set(yearValue);
       } catch (e) {
         console.warn('bad input parameter', e);
@@ -221,7 +222,7 @@ var ModelParameters = Backbone.View.extend({
   setSliders: function () {
     var m = Oci.data.metadata;
 
-    yearValues = this.metadataYearToArray(m.year);
+    yearValues = this.metadataToArray(m.year);
     flaringValues = this.metadataToArray(m.flare);
     waterValues = this.metadataToArray(m.water);
     cokeValues = [0, 50, 100];
