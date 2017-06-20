@@ -20,7 +20,6 @@ var gi = [1, 0];
 var zi = [1, 0];
 var ri = utils.trimMetadataArray(metadata.refinery.split(','));
 var li = [1, 0];
-var hi = utils.trimMetadataArray(metadata.year.split(','));
 
 gi.forEach(function (_, g) {
   wi.forEach(function (_, w) {
@@ -36,10 +35,8 @@ gi.forEach(function (_, g) {
 zi.forEach(function (_, z) {
   ri.forEach(function (_, r) {
     li.forEach(function (_, l) {
-      hi.forEach(function (_, h) {
-        var temp = JSON.parse(fs.readFileSync('app/assets/data/prelim/prelim_run' + z + r + l + h + '.json'));
-        Oci.data.prelim['run' + z + r + l + h] = temp;
-      });
+      var temp = JSON.parse(fs.readFileSync('app/assets/data/prelim/prelim_run' + z + r + l + '.json'));
+      Oci.data.prelim['run' + z + r + l] = temp;
     });
   });
 });
