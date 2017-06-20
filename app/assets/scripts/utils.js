@@ -117,7 +117,7 @@ var utils = {
                 }
                 if (!extent || (total * minMaxMultiplier > extent * minMaxMultiplier)) {
                   extent = total;
-               }
+                }
               });
             }
           }
