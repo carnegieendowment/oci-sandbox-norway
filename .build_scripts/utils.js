@@ -64,37 +64,39 @@ var utils = {
         for (var l = 0; l < data.metadata.refinery.split(',').length; l++) {
           // this for loop is for LPG runs
           for (var m = 0; m < 2; m++) {
-            var prelim = data.prelim['run' + z + l + m][key];
-            // we might not have a prelim run for this oil (certain oils don't
-            // run through some refineries)
-            if (!prelim) break;
+            for (var h = 0; h < data.metadata.year.split(',').length; h++) {
+              var prelim = data.prelim['run' + z + l + m + h][key];
+              // we might not have a prelim run for this oil (certain oils don't
+              // run through some refineries)
+              if (!prelim) break;
 
-            [0, 0.5, 1].forEach(function (showCoke) {
-              var refining = +utils.getRefiningTotal(prelim);
-              var combustion = +utils.getCombustionTotal(prelim, showCoke, m);
+              [0, 0.5, 1].forEach(function (showCoke) {
+                var refining = +utils.getRefiningTotal(prelim);
+                var combustion = +utils.getCombustionTotal(prelim, showCoke, m);
 
-              // Sum it up! (conditionally based on whether component is selected)
-              var total;
-              components.upstream = opgeeExtent;
-              components.midstream = refining;
-              components.downstream = combustion + transport;
-              if (component) {
-                total = components[component];
-              } else {
-                total = _.reduce(components, function (a, b) { return a + b; }, 0);
-              }
+                // Sum it up! (conditionally based on whether component is selected)
+                var total;
+                components.upstream = opgeeExtent;
+                components.midstream = refining;
+                components.downstream = combustion + transport;
+                if (component) {
+                  total = components[component];
+                } else {
+                  total = _.reduce(components, function (a, b) { return a + b; }, 0);
+                }
 
-              // Handle ratio
-              total = utils.getValueForRatio(total, ratio, prelim, showCoke, data.info[key], m);
+                // Handle ratio
+                total = utils.getValueForRatio(total, ratio, prelim, showCoke, data.info[key], m);
 
-              // Check which is bigger (or smaller)
-              if (!opgeeExtent || (extraction * minMaxMultiplier > opgeeExtent * minMaxMultiplier)) {
-                opgeeExtent = extraction;
-              }
-              if (!extent || (total * minMaxMultiplier > extent * minMaxMultiplier)) {
-                extent = total;
-              }
-            });
+                // Check which is bigger (or smaller)
+                if (!opgeeExtent || (extraction * minMaxMultiplier > opgeeExtent * minMaxMultiplier)) {
+                  opgeeExtent = extraction;
+                }
+                if (!extent || (total * minMaxMultiplier > extent * minMaxMultiplier)) {
+                  extent = total;
+                }
+              });
+            }
           }
         }
       }
