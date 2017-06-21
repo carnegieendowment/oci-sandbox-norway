@@ -458,8 +458,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Australia Kingfish*": {
-    "Unique": "Australia Kingfish*",
+  "Australia Kingfish (proxy assay)": {
+    "Unique": "Australia Kingfish (proxy assay)",
     "Portion Gasoline": "31325.04843",
     "Portion Jet Fuel": "19567.63019",
     "Portion Diesel": "6694.180364",
@@ -509,8 +509,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Cananda Terra Nova*": {
-    "Unique": "Cananda Terra Nova*",
+  "Cananda Terra Nova": {
+    "Unique": "Cananda Terra Nova",
     "Portion Gasoline": "0",
     "Portion Jet Fuel": "0",
     "Portion Diesel": "0",
@@ -1070,8 +1070,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Norway Valhall": {
-    "Unique": "Norway Valhall",
+  "Norway Valhall (proxy assay)": {
+    "Unique": "Norway Valhall (proxy assay)",
     "Portion Gasoline": "40144.49821",
     "Portion Jet Fuel": "22929.161",
     "Portion Diesel": "17346.05649",
@@ -1121,8 +1121,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "UK Forties Blend^": {
-    "Unique": "UK Forties Blend^",
+  "UK Forties Blend": {
+    "Unique": "UK Forties Blend",
     "Portion Gasoline": "32251.81495",
     "Portion Jet Fuel": "21380.88387",
     "Portion Diesel": "7693.310757",
