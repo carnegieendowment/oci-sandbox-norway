@@ -407,8 +407,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "U.S. California Midway Sunset^": {
-    "Unique": "U.S. California Midway Sunset^",
+  "U.S. California Midway Sunset (no Statoil assay)": {
+    "Unique": "U.S. California Midway Sunset (no Statoil assay)",
     "Portion Gasoline": "0",
     "Portion Jet Fuel": "0",
     "Portion Diesel": "0",
@@ -458,8 +458,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "U.S. California South Belridge^": {
-    "Unique": "U.S. California South Belridge^",
+  "U.S. California South Belridge (no Statoil assay)": {
+    "Unique": "U.S. California South Belridge (no Statoil assay)",
     "Portion Gasoline": "40983.83276",
     "Portion Jet Fuel": "9668.634246",
     "Portion Diesel": "44555.1397",
@@ -509,8 +509,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "U.S. California Wilmington^": {
-    "Unique": "U.S. California Wilmington^",
+  "U.S. California Wilmington (no Statoil assay)": {
+    "Unique": "U.S. California Wilmington (no Statoil assay)",
     "Portion Gasoline": "0",
     "Portion Jet Fuel": "0",
     "Portion Diesel": "0",
@@ -611,8 +611,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Australia Kingfish*": {
-    "Unique": "Australia Kingfish*",
+  "Australia Kingfish (proxy assay)": {
+    "Unique": "Australia Kingfish (proxy assay)",
     "Portion Gasoline": "0",
     "Portion Jet Fuel": "0",
     "Portion Diesel": "0",
@@ -662,8 +662,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Cananda Terra Nova*": {
-    "Unique": "Cananda Terra Nova*",
+  "Cananda Terra Nova": {
+    "Unique": "Cananda Terra Nova",
     "Portion Gasoline": "47702.11444",
     "Portion Jet Fuel": "20132.35484",
     "Portion Diesel": "26699.97882",
@@ -1223,8 +1223,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "Norway Valhall": {
-    "Unique": "Norway Valhall",
+  "Norway Valhall (proxy assay)": {
+    "Unique": "Norway Valhall (proxy assay)",
     "Portion Gasoline": "51052.20592",
     "Portion Jet Fuel": "22929.161",
     "Portion Diesel": "26929.78174",
@@ -1274,8 +1274,8 @@
     "Petrochemical Feedstocks": "N/A",
     "Asphalt": "N/A"
   },
-  "UK Forties Blend^": {
-    "Unique": "UK Forties Blend^",
+  "UK Forties Blend": {
+    "Unique": "UK Forties Blend",
     "Portion Gasoline": "53305.41787",
     "Portion Jet Fuel": "21380.88387",
     "Portion Diesel": "22558.72116",
