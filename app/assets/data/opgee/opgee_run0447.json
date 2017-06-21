@@ -167,8 +167,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "782.4562143"
   },
-  "U.S. California Midway Sunset^": {
-    "Unique": "U.S. California Midway Sunset^",
+  "U.S. California Midway Sunset (no Statoil assay)": {
+    "Unique": "U.S. California Midway Sunset (no Statoil assay)",
     "Exploration": "0",
     "Drilling": "2.190782203",
     "Production": "6.994731244",
@@ -188,8 +188,8 @@
     "Steam-to-Oil-Ratio": "4.292456995",
     "Flaring-to-Oil-Ratio": "24.37062803"
   },
-  "U.S. California South Belridge^": {
-    "Unique": "U.S. California South Belridge^",
+  "U.S. California South Belridge (no Statoil assay)": {
+    "Unique": "U.S. California South Belridge (no Statoil assay)",
     "Exploration": "0",
     "Drilling": "7.920850676",
     "Production": "0.735726794",
@@ -209,8 +209,8 @@
     "Steam-to-Oil-Ratio": "1.968306324",
     "Flaring-to-Oil-Ratio": "3.36618022"
   },
-  "U.S. California Wilmington^": {
-    "Unique": "U.S. California Wilmington^",
+  "U.S. California Wilmington (no Statoil assay)": {
+    "Unique": "U.S. California Wilmington (no Statoil assay)",
     "Exploration": "0",
     "Drilling": "0.8905326",
     "Production": "39.51129953",
@@ -251,29 +251,29 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "2945.205872"
   },
-  "Australia Kingfish*": {
-    "Unique": "Australia Kingfish*",
+  "Australia Kingfish (proxy assay)": {
+    "Unique": "Australia Kingfish (proxy assay)",
     "Exploration": "0",
-    "Drilling": "0.629542936",
-    "Production": "0.44969114",
-    "Processing": "3.355740499",
+    "Drilling": "0",
+    "Production": "0",
+    "Processing": "0",
     "Upgrading": "0",
     "Maintenance": "0",
     "Waste": "0",
-    "Venting, Flaring, and Fugitive Emissions": "26.41017125",
+    "Venting, Flaring, and Fugitive Emissions": "0",
     "Diluent": "0",
-    "Miscellaneous": "2.735095456",
-    "Transport to Refinery": "6.643309596",
-    "Offsite emissions": "0.713908429",
-    "Net lifecycle emissions": "40.93745931",
+    "Miscellaneous": "0",
+    "Transport to Refinery": "0",
+    "Offsite emissions": "0",
+    "Net lifecycle emissions": "0",
     "API Gravity": "47",
     "Gas-to-Oil-Ratio": "363",
     "Water-to-Oil-Ratio": "1.45754717",
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "110.3913826"
   },
-  "Cananda Terra Nova*": {
-    "Unique": "Cananda Terra Nova*",
+  "Cananda Terra Nova": {
+    "Unique": "Cananda Terra Nova",
     "Exploration": "0",
     "Drilling": "1.395986773",
     "Production": "1.76745754",
@@ -338,18 +338,18 @@
   "Norway Asgard": {
     "Unique": "Norway Asgard",
     "Exploration": "0",
-    "Drilling": "9.285173721",
-    "Production": "80.59541191",
-    "Processing": "302.9442188",
+    "Drilling": "0",
+    "Production": "0",
+    "Processing": "0",
     "Upgrading": "0",
     "Maintenance": "0",
     "Waste": "0",
-    "Venting, Flaring, and Fugitive Emissions": "553.5672716",
+    "Venting, Flaring, and Fugitive Emissions": "0",
     "Diluent": "0",
-    "Miscellaneous": "2.697931955",
-    "Transport to Refinery": "3.572147324",
-    "Offsite emissions": "-523.1795467",
-    "Net lifecycle emissions": "429.4826086",
+    "Miscellaneous": "0",
+    "Transport to Refinery": "0",
+    "Offsite emissions": "0",
+    "Net lifecycle emissions": "0",
     "API Gravity": "50.5",
     "Gas-to-Oil-Ratio": "110142.3003",
     "Water-to-Oil-Ratio": "1.720058583",
@@ -401,18 +401,18 @@
   "Norway Gudrun": {
     "Unique": "Norway Gudrun",
     "Exploration": "0",
-    "Drilling": "10.00261766",
-    "Production": "2.545849216",
-    "Processing": "9.605088286",
+    "Drilling": "0",
+    "Production": "0",
+    "Processing": "0",
     "Upgrading": "0",
     "Maintenance": "0",
     "Waste": "0",
-    "Venting, Flaring, and Fugitive Emissions": "28.412035",
+    "Venting, Flaring, and Fugitive Emissions": "0",
     "Diluent": "0",
-    "Miscellaneous": "2.791405463",
-    "Transport to Refinery": "3.769390958",
-    "Offsite emissions": "-14.27589898",
-    "Net lifecycle emissions": "42.8504876",
+    "Miscellaneous": "0",
+    "Transport to Refinery": "0",
+    "Offsite emissions": "0",
+    "Net lifecycle emissions": "0",
     "API Gravity": "30",
     "Gas-to-Oil-Ratio": "2652.673546",
     "Water-to-Oil-Ratio": "0.033565339",
@@ -503,8 +503,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "22.00814147"
   },
-  "Norway Valhall": {
-    "Unique": "Norway Valhall",
+  "Norway Valhall (proxy assay)": {
+    "Unique": "Norway Valhall (proxy assay)",
     "Exploration": "0",
     "Drilling": "7.635813083",
     "Production": "1.263216665",
@@ -524,8 +524,8 @@
     "Steam-to-Oil-Ratio": "0",
     "Flaring-to-Oil-Ratio": "14.21037366"
   },
-  "UK Forties Blend^": {
-    "Unique": "UK Forties Blend^",
+  "UK Forties Blend": {
+    "Unique": "UK Forties Blend",
     "Exploration": "0",
     "Drilling": "0.622870997",
     "Production": "21.56424301",
