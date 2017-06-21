@@ -303,9 +303,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "U.S. California Midway Sunset^": {
+  "U.S. California Midway Sunset (no Statoil assay)": {
     "Region": "North America",
-    "Unique": "U.S. California Midway Sunset^",
+    "Unique": "U.S. California Midway Sunset (no Statoil assay)",
     "Country": "US Continental",
     "Oil Field Name (OPGEE)": "Midway Sunset",
     "Assay Name (PRELIM)": "Midway-Sunset_Knovel",
@@ -341,9 +341,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "U.S. California South Belridge^": {
+  "U.S. California South Belridge (no Statoil assay)": {
     "Region": "North America",
-    "Unique": "U.S. California South Belridge^",
+    "Unique": "U.S. California South Belridge (no Statoil assay)",
     "Country": "US Continental",
     "Oil Field Name (OPGEE)": "South Belridge",
     "Assay Name (PRELIM)": "Belridge_Knovel",
@@ -379,9 +379,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "U.S. California Wilmington^": {
+  "U.S. California Wilmington (no Statoil assay)": {
     "Region": "North America",
-    "Unique": "U.S. California Wilmington^",
+    "Unique": "U.S. California Wilmington (no Statoil assay)",
     "Country": "US Continental",
     "Oil Field Name (OPGEE)": "Wilmington",
     "Assay Name (PRELIM)": "Wilmington CA_Knovel",
@@ -455,9 +455,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Australia Kingfish*": {
+  "Australia Kingfish (proxy assay)": {
     "Region": "Asia-Pacific",
-    "Unique": "Australia Kingfish*",
+    "Unique": "Australia Kingfish (proxy assay)",
     "Country": "Australia",
     "Oil Field Name (OPGEE)": "Kingfish 1998",
     "Assay Name (PRELIM)": "Cossack_Chevron",
@@ -493,9 +493,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Cananda Terra Nova*": {
+  "Cananda Terra Nova": {
     "Region": "North America",
-    "Unique": "Cananda Terra Nova*",
+    "Unique": "Cananda Terra Nova",
     "Country": "Canada",
     "Oil Field Name (OPGEE)": "Terra Nova 2014",
     "Assay Name (PRELIM)": "Statoil Terra Nova",
@@ -911,9 +911,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "Norway Valhall": {
+  "Norway Valhall (proxy assay)": {
     "Region": "Europe",
-    "Unique": "Norway Valhall",
+    "Unique": "Norway Valhall (proxy assay)",
     "Country": "Norway",
     "Oil Field Name (OPGEE)": "Valhall 2014",
     "Assay Name (PRELIM)": "Nigera Quaib_Exxon",
@@ -949,9 +949,9 @@
     "PRELIM Data Quality": "#N/A",
     "OPEM Data Quality": "#N/A"
   },
-  "UK Forties Blend^": {
+  "UK Forties Blend": {
     "Region": "Europe",
-    "Unique": "UK Forties Blend^",
+    "Unique": "UK Forties Blend",
     "Country": "UK",
     "Oil Field Name (OPGEE)": "Forties Blend",
     "Assay Name (PRELIM)": "Statoil Forties",
