@@ -10,8 +10,6 @@ var noUiSlider = require('nouislider');
 var template = require('../templates/modelparameters.ejs');
 
 var self;
-var yearValues;
-var yearLabels;
 var flaringValues;
 var flaringLabels;
 var waterValues;
@@ -46,11 +44,11 @@ var ModelParameters = Backbone.View.extend({
 
   getModelValues: function () {
     return {
-      year: (this.yearSlider.get() / 100),
       water: (this.waterSlider.get() / 100),
       flaring: (this.flaringSlider.get() / 100),
       showCoke: (this.cokeSlider.get() / 100),
       refinery: $('#dropdown-refinery').val(),
+      year: $('#dropdown-year').val(),
       lpg: $('#toggle-lpg').is(':checked'),
       gwp: $('#toggle-gwp').is(':checked')
     };
@@ -65,8 +63,7 @@ var ModelParameters = Backbone.View.extend({
         var water = params.opgee[4];
         var flaring = params.opgee[5];
         var year = params.opgee[6];
-        var yearValue = parseFloat(Oci.data.metadata.year.split(',')[year]);
-        this.yearSlider.set(yearValue);
+        $('#dropdown-year').prop('selectedIndex', year);
         var waterValue = parseFloat(Oci.data.metadata.water.split(',')[water]) * 100;
         this.waterSlider.set(waterValue);
         var flaringValue = parseFloat(Oci.data.metadata.flare.split(',')[flaring]) * 100;
@@ -85,7 +82,7 @@ var ModelParameters = Backbone.View.extend({
         $('#dropdown-refinery').prop('selectedIndex', refinery);
         $('#toggle-lpg').attr('checked', Boolean(lpg));
         $('#toggle-gwp').attr('checked', Boolean(gwp));
-        this.yearSlider.set(yearValue);
+        $('#dropdown-year').prop('selectedIndex', year);
       } catch (e) {
         console.warn('bad input parameter', e);
       }
@@ -99,8 +96,6 @@ var ModelParameters = Backbone.View.extend({
   },
 
   updateSummary: function () {
-    var year = parseInt(this.yearSlider.get());
-    $('.value.year span').html(year);
     var flaring = parseInt(this.flaringSlider.get());
     $('.value.flare span').html(flaring + '%');
     var water = parseInt(this.waterSlider.get());
@@ -131,28 +126,38 @@ var ModelParameters = Backbone.View.extend({
     }
     $('.value.refinery span').html(refinery);
   },
+  var year = $('#dropdown-year').val();
+    switch (year) {
+      case '0 = 2014':
+        year = '2014';
+        break;
+      case '1 = 1966':
+        year = '1966';
+        break;
+      case '2 = 1976':
+        year = '1976';
+        break;
+      case '3 = 1982':
+        year = '1982';
+        break;
+      case '4 = 1986':
+        year = '1986';
+        break;
+      case '5 = 1992':
+        year = '1992';
+        break;
+      case '6 = 1996':
+        year = '1996';
+        break;
+      case '7 = 2006':
+        year = '2006';
+        break;
+    }
+    $('.value.year span').html(year);
+  },
 
   addSliders: function () {
     var self = this;
-
-    this.yearSlider = noUiSlider.create($('#slider-year')[0], {
-      start: 2014,
-      connect: 'lower',
-      snap: true,
-      range: _.zipObject(yearLabels, yearValues),
-      pips: {
-        mode: 'values',
-        values: yearValues,
-        density: 10,
-        format: wNumb({
-          toFixed: '10'
-        }),
-        stepped: true
-      }
-    });
-    this.yearSlider.on('update', function (value) {
-      self.trigger('sliderUpdate', value);
-    });
 
     this.flaringSlider = noUiSlider.create($('#slider-flaring')[0], {
       start: 100,
@@ -223,12 +228,10 @@ var ModelParameters = Backbone.View.extend({
 
     flaringValues = this.metadataToArray(m.flare);
     waterValues = this.metadataToArray(m.water);
-    yearValues = this.metadataToArray(m.year);
     cokeValues = [0, 50, 100];
 
     flaringLabels = this.sliderHelper(flaringValues);
     waterLabels = this.sliderHelper(waterValues);
-    yearLabels = this.sliderHelperYear(yearValues);
     cokeLabels = this.sliderHelper(cokeValues);
   },
 
