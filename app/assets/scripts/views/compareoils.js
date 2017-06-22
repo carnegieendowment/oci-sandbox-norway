@@ -62,7 +62,7 @@ var CompareOils = BaseView.extend({
       { name: 'sortSelect', input: 'sort-select' },
       { name: 'regionSelect', input: 'region-select' },
       { name: 'oiltypeSelect', input: 'oiltype-select' },
-      { name: 'opecSelect', input: 'opec-select' }
+      { name: 'yearSelect', input: 'production-year-select' }
     ];
     // for resizing customization
     this.resizeOptions = { width: true };
