@@ -127,28 +127,28 @@ var ModelParameters = Backbone.View.extend({
     $('.value.refinery span').html(refinery);
     var year = $('#dropdown-year').val();
     switch (year) {
-      case '0 = 2014':
+      case '2014':
         year = '2014';
         break;
-      case '1 = 1966':
+      case '1966':
         year = '1966';
         break;
-      case '2 = 1976':
+      case '1976':
         year = '1976';
         break;
-      case '3 = 1982':
+      case '1982':
         year = '1982';
         break;
-      case '4 = 1986':
+      case '1986':
         year = '1986';
         break;
-      case '5 = 1992':
+      case '1992':
         year = '1992';
         break;
-      case '6 = 1996':
+      case '1996':
         year = '1996';
         break;
-      case '7 = 2006':
+      case '2006':
         year = '2006';
         break;
     }
