@@ -6,16 +6,16 @@
 <div class="mp-summary">
   <ul class="mp-list">
     <li>
-      <h6 class="key icon-solar-steam" data-title-after="Select the year of crude oil production.">Production Year</h6>
-      <div class="value year"><span></span></div>
-    </li>
-    <li>
       <h6 class="key icon-flare" data-title-after="Select the share of natural gas wasted through combustion upstream.">Flaring Intensity</h6>
       <div class="value flare"><span></span></div>
     </li>
     <li>
       <h6 class="key icon-water" data-title-after="Select the share of water extracted alongside oil.">Water Intensity</h6>
       <div class="value water"><span></span></div>
+    </li>
+        <li>
+      <h6 class="key icon-refinery" data-title-after="Select the year of production.">Production Year</h6>
+      <div class="value year"><span></span></div>
     </li>
     <li>
       <h6 class="key icon-refinery" data-title-after="Select the refinery design, which can midstream emissions and downstream products.">Refinery Configuration</h6>
@@ -30,19 +30,12 @@
       <div class="value lpg"><span></span></div>
     </li>
     <li>
-      <h6 class="key icon-gwp" data-title-after="Select whether a 20 or 100 year Global Warming Potential is used to assess impact of non-CO2 emissions.">Global Warming Potential</h6>
+      <h6 class="key icon-solar-steam" data-title-after="Select whether a 20 or 100 year Global Warming Potential is used to assess impact of non-CO2 emissions.">Global Warming Potential</h6>
       <div class="value gwp"><span></span></div>
     </li>
   </ul>
 </div>
 <div class="mp-edit">
-  <div class="param-control icon-solar-steam">
-    <div class="container-filter_title">
-      <strong class="param-title">Production Year</strong>
-      <span data-title-after="Select the year of crude oil production." class="icon-information">?</span>
-    </div>
-    <div class="slider" id="slider-year"></div>
-  </div>
   <div class="param-control icon-flare">
     <div class="container-filter_title">
       <strong class="param-title">Flaring Intensity</strong>
@@ -63,6 +56,22 @@
       <span data-title-before="Select the share of petroleum coke combusted downstream." class="icon-information">?</span>
     </div>
     <div class="slider" id="slider-coke"></div>
+  </div>
+  <div class="param-control icon-refinery">
+    <div class="container-filter_title">
+      <strong class="param-title">Production Year</strong>
+      <span data-title-before="Select year of crude oil production." class="icon-information">?</span>
+    </div>
+    <select class="config-dropdown form-control" id="dropdown-year">
+      <option value="0 = 2014">2014</option>
+      <option value="1 = 1966">1966</option>
+      <option value="2 = 1976">1976</option>
+      <option value="3 = 1982">1982</option>
+      <option value="4 = 1986">1986</option>
+      <option value="5 = 1992">1992</option>
+      <option value="6 = 1996">1996</option>
+      <option value="7 = 2006">2006</option>
+    </select>
   </div>
   <div class="param-control icon-refinery">
     <div class="container-filter_title">
